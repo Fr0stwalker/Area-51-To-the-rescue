@@ -6,7 +6,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] float moveSpeed = 7f; //Change in inspector to adjust move speed
     [SerializeField] private float minBoundary = -45;
     [SerializeField] private float maxBoundary = 45;
-    [SerializeField] private float xSlow = 1.25f;
+    private float xSlow = 1.25f;
     float camRayLength = 100f;
     int floorMask;
     Rigidbody playerRigidbody;
