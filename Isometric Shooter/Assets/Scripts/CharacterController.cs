@@ -4,9 +4,6 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 7f; //Change in inspector to adjust move speed
-    [SerializeField] private float screenWidthInUnits = 16f;
-    [SerializeField] private float screenHeightInUnits = 16f;
-    [SerializeField] private float rotateSpeed = 3f;
     [SerializeField] private float minBoundary=-45;
     [SerializeField] private float maxBoundary=45;
     float camRayLength = 100f;
