@@ -4,8 +4,9 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 7f; //Change in inspector to adjust move speed
-    [SerializeField] private float minBoundary=-45;
-    [SerializeField] private float maxBoundary=45;
+    [SerializeField] private float minBoundary = -45;
+    [SerializeField] private float maxBoundary = 45;
+    [SerializeField] private float xSlow = 1.25f;
     float camRayLength = 100f;
     int floorMask;
     Rigidbody playerRigidbody;
@@ -14,10 +15,11 @@ public class CharacterController : MonoBehaviour
     {
         _forward = Camera.main.transform.forward; // Set forward to equal the camera's forward vector
         _forward.y = 0; // make sure y is 0
-    _forward = Vector3.Normalize(_forward); // make sure the length of vector is set to a max of 1.0
-    _right = Quaternion.Euler(new Vector3(0, 90, 0)) * _forward; // set the right-facing vector to be facing right relative to the camera's forward vector
-    playerRigidbody = GetComponent<Rigidbody>();
-    floorMask = LayerMask.GetMask("Floor");
+        _forward = Vector3.Normalize(_forward); // make sure the length of vector is set to a max of 1.0
+        _right = Quaternion.Euler(new Vector3(0, 90, 0)) * _forward; // set the right-facing vector to be facing right relative to the camera's forward vector
+
+        playerRigidbody = GetComponent<Rigidbody>();
+        floorMask = LayerMask.GetMask("Floor");
     }
     void Update()
     {
@@ -55,14 +57,25 @@ public class CharacterController : MonoBehaviour
 
     void Move()
     {
-        Vector3 rightMovement = moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey") * _right; // Our right movement is based on the right vector, movement speed, and our GetAxis command. We multiply by Time.deltaTime to make the movement smooth.
-        Vector3 upMovement = moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey") * _forward; // Up movement uses the forward vector, movement speed, and the vertical axis inputs.
-        var transform1 = transform;
-        var position = transform1.position;
+        Vector3 rightMovement, upMovement;
+        if (Input.GetButton("Horizontal") && Input.GetButton("Vertical")) {
+            rightMovement = moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey") * _right / xSlow;
+            upMovement = moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey") * _forward / xSlow;
+        }
+        else {
+            rightMovement = moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey") * _right; // Our right movement is based on the right vector, movement speed, and our GetAxis command. We multiply by Time.deltaTime to make the movement smooth.
+            upMovement = moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey") * _forward; // Up movement uses the forward vector, movement speed, and the vertical axis inputs.
+        }
+
+        //var transform1 = transform; // niepotrzebne?
+        var position = transform.position;
+
         position += rightMovement; // move our transform's position right/left
         position += upMovement; // Move our transform's position up/down
+
+
         position.x = Mathf.Clamp(position.x, minBoundary, maxBoundary);
         position.z = Mathf.Clamp(position.z, minBoundary, maxBoundary);
-        transform1.position = position;
+        transform.position = position;
     }
 }
