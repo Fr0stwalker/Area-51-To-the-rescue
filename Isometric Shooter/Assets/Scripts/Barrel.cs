@@ -9,6 +9,7 @@ public class Barrel : MonoBehaviour
 {
     [SerializeField] AudioClip explosionClip;
     [SerializeField] private float respawnTimer=60f;
+    //[SerializeField] private float explosionRadius = 0.4f;
     private NavMeshObstacle _barrelObstacle;
     private AudioSource _barrelAudioSource;
     private ParticleSystem _explosionParticleSystem;
@@ -41,16 +42,17 @@ public class Barrel : MonoBehaviour
     public void Death()
     {
         _isDead = true;
-        _capsuleCollider.isTrigger = true;
+        _capsuleCollider.enabled = false;
         _barrelObstacle.enabled = false;
         _barrelAudioSource.clip = explosionClip;
         _barrelAudioSource.Play();
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
     }
 
     private void Respawn()
     {
-        _capsuleCollider.isTrigger = false;
+        _capsuleCollider.enabled = true;
         _barrelObstacle.enabled = true;
         gameObject.transform.GetChild(0).gameObject.SetActive(true);
         _isDead = false;
