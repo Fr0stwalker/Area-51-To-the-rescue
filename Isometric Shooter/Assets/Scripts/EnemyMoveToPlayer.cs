@@ -12,9 +12,9 @@ public class EnemyMoveToPlayer : MonoBehaviour
     // Update is called once per frame
     void Update() {
         GameObject findPlayer = GameObject.FindGameObjectWithTag("Player");
-        var goTo = findPlayer.transform.position;
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = goTo;
+        var moveToPlayer = findPlayer.transform.position;
+        NavMeshAgent enemyNavMoveTowardPlayer = GetComponent<NavMeshAgent>();
+        enemyNavMoveTowardPlayer.destination = moveToPlayer;
 
     }
 }
