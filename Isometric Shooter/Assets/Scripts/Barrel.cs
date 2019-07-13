@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Barrel : MonoBehaviour
 {
     [SerializeField] AudioClip explosionClip;
     [SerializeField] private float respawnTimer=60f;
+    private NavMeshObstacle _barrelObstacle;
     private AudioSource _barrelAudioSource;
     private ParticleSystem _explosionParticleSystem;
     private CapsuleCollider _capsuleCollider;
@@ -20,6 +22,7 @@ public class Barrel : MonoBehaviour
         _barrelAudioSource = GetComponent<AudioSource>();
         _explosionParticleSystem = GetComponent<ParticleSystem>();
         _capsuleCollider = GetComponent<CapsuleCollider>();
+        _barrelObstacle = GetComponent<NavMeshObstacle>();
     }
 
     private void Update()
@@ -27,7 +30,6 @@ public class Barrel : MonoBehaviour
         if (_isDead)
         {
             _respawnTimer += Time.deltaTime;
-            //Debug.Log(_respawnTimer);
         }
 
         if (respawnTimer <= _respawnTimer)
@@ -40,15 +42,16 @@ public class Barrel : MonoBehaviour
     {
         _isDead = true;
         _capsuleCollider.isTrigger = true;
-        //_barrelAudioSource.clip = explosionClip;
-        //_barrelAudioSource.Play();
+        _barrelObstacle.enabled = false;
+        _barrelAudioSource.clip = explosionClip;
+        _barrelAudioSource.Play();
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
     }
 
     private void Respawn()
     {
-        Debug.Log("Respawn");
         _capsuleCollider.isTrigger = false;
+        _barrelObstacle.enabled = true;
         gameObject.transform.GetChild(0).gameObject.SetActive(true);
         _isDead = false;
         _respawnTimer = 0f;
