@@ -6,12 +6,13 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private float spawnTimer=10f;
+    [SerializeField] private float firstSpawnTimerDelay = 5f;
     [SerializeField] private GameObject enemy;
     private float timer;
 
     private void Start()
     {
-        timer = spawnTimer;
+        timer = spawnTimer- firstSpawnTimerDelay;
     }
 
     private void Update()
