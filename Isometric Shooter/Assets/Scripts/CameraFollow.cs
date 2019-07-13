@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class CameraFollow : MonoBehaviour
@@ -9,6 +10,11 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float maxBoundary = 12;
     private Vector3 _offset;
 
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -18,9 +24,12 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Vector3 targetCamPos = target.position + _offset;
-        targetCamPos.x = Mathf.Clamp(targetCamPos.x,minBoundary, maxBoundary);
-        targetCamPos.z = Mathf.Clamp(targetCamPos.z, minBoundary, maxBoundary);
-        transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
+        if (target != null)
+        {
+            Vector3 targetCamPos = target.position + _offset;
+            targetCamPos.x = Mathf.Clamp(targetCamPos.x, minBoundary, maxBoundary);
+            targetCamPos.z = Mathf.Clamp(targetCamPos.z, minBoundary, maxBoundary);
+            transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
+        }
     }
 }

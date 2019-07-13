@@ -33,10 +33,13 @@ public class EnemyAttack : MonoBehaviour
         }
     }
     private void DistanceToPlayer() {
-        distanceFromEnemyToPlayer = Vector3.Distance(
-            GameObject.Find("Player").transform.position,
-            transform.position
+        if (GameObject.Find("Player") != null)
+        {
+            distanceFromEnemyToPlayer = Vector3.Distance(
+                GameObject.Find("Player").transform.position,
+                transform.position
             );
+        }
     }
     
      /* Stary skrypt poruszania się do gracza, zostawiłem go może na przyszłość, można usunąć jeśli przeszkadza
