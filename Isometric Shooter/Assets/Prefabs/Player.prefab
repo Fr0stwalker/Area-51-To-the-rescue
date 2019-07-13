@@ -124,7 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  currentLives: 0
+  invincibleTime: 3
+  currentLives: 3
   deathClip: {fileID: 0}
 --- !u!54 &1638626614
 Rigidbody:

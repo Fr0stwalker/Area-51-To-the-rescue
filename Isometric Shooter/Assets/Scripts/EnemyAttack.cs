@@ -6,23 +6,27 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
 
-    Vector3 playerPosition;
+    Vector3 _playerPosition;
     float distanceFromEnemyToPlayer;
-    void Start() {
+    [SerializeField] private float timeBetweenAttacks = 0.5f;
+    private float _timer;
 
-    }
-
-    void Update() {
+    void Update()
+    {
+        _timer += Time.deltaTime;
         FindPlayerCharacter();
         DistanceToPlayer();
-        AttackPlayer();
+        if (_timer >= timeBetweenAttacks && distanceFromEnemyToPlayer <= 1)
+        {
+            AttackPlayer();
+        }
     }
 
 
     private void FindPlayerCharacter() {
         GameObject isPlayerAlive = GameObject.Find("Player");
         if (isPlayerAlive) {
-            playerPosition = isPlayerAlive.transform.position;
+            _playerPosition = isPlayerAlive.transform.position;
         }
         else {
             return;
@@ -45,10 +49,10 @@ public class EnemyAttack : MonoBehaviour
     */
 
     // TODO: Attack player, currently enemy dissapear in 1 radius
-    private void AttackPlayer() {
-        if(distanceFromEnemyToPlayer <= 1) {
-            Destroy(gameObject);
-        }
+    private void AttackPlayer()
+    {
+        _timer = 0f;
+        GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage();
     }
 
 }

@@ -2362,11 +2362,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3838141387529546848, guid: 1d86b0e250aa24d48b61db14bc9afea9,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 3838141387529546852, guid: 1d86b0e250aa24d48b61db14bc9afea9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2422,11 +2417,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3838141387529546850, guid: 1d86b0e250aa24d48b61db14bc9afea9,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 590ce919908c6d3409a75e528a19fb91, type: 2}
+    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
+      propertyPath: invincibleTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
+      propertyPath: lives
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
+      propertyPath: currentLives
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
 --- !u!1001 &7936818460166384265
