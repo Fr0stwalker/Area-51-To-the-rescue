@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyDeath : MonoBehaviour
 {
+    [SerializeField] private int scorePerEnemy=50;
     private ScoreManagement _scoreManager;
     private void Awake()
     {
@@ -13,6 +14,6 @@ public class EnemyDeath : MonoBehaviour
 
     void OnDestroy()
     {
-        _scoreManager.CurrentScore += 50;
+        _scoreManager.CurrentScore += scorePerEnemy;
     }
 }
