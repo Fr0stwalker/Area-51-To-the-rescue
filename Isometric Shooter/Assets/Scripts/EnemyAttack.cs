@@ -3,9 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] float MovementSpeed = 5f;
 
     Vector3 playerPosition;
     float distanceFromEnemyToPlayer;
@@ -16,7 +15,6 @@ public class EnemyAI : MonoBehaviour
     void Update() {
         FindPlayerCharacter();
         DistanceToPlayer();
-        MoveTowardsPlayerPosition();
         AttackPlayer();
     }
 
@@ -26,17 +24,25 @@ public class EnemyAI : MonoBehaviour
         if (isPlayerAlive) {
             playerPosition = isPlayerAlive.transform.position;
         }
+        else {
+            return;
+        }
     }
     private void DistanceToPlayer() {
         distanceFromEnemyToPlayer = Vector3.Distance(
-            GameObject.FindGameObjectWithTag("Player").transform.position,
+            GameObject.Find("Player").transform.position,
             transform.position
             );
     }
+    
+     /* Stary skrypt poruszania się do gracza, zostawiłem go może na przyszłość, można usunąć jeśli przeszkadza
+    
     private void MoveTowardsPlayerPosition() {
         float moveToPlayerSpeed = MovementSpeed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, playerPosition, moveToPlayerSpeed);
-    }
+    } 
+    
+    */
 
     // TODO: Attack player, currently enemy dissapear in 1 radius
     private void AttackPlayer() {
