@@ -20,12 +20,18 @@ public class PlayerHealth : MonoBehaviour
     private float _timer;
     private int _heartToRemove=0;
 
+    private MeshRenderer meshRenderer;
+
+    void Start() {
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
+
     private void Update()
     {
-        if (_damaged)
-        {
+        if (_damaged) {
             Debug.Log("Ouch");
             _invincible = true;
+            InvincibleFlashing();
             Debug.Log("Can't hit me");
         }
 
@@ -40,6 +46,20 @@ public class PlayerHealth : MonoBehaviour
             _timer = 0f;
             _invincible = false;
             _damaged = false;
+
+            // Makes sure that after invincible phase, mesh renderer is enabled
+            meshRenderer.enabled = true;
+        }
+    }
+
+    private void InvincibleFlashing() {
+        if (_invincible == true) {
+            if (Time.fixedTime % 0.5 < 0.2) {
+                meshRenderer.enabled = false;
+            }
+            else {
+                meshRenderer.enabled = true;
+            }
         }
     }
 
