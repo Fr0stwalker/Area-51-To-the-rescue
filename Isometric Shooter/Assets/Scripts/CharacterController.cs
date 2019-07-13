@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
@@ -10,7 +12,15 @@ public class CharacterController : MonoBehaviour
     float camRayLength = 100f;
     int floorMask;
     Rigidbody playerRigidbody;
+    private Animator anim;
     private Vector3 _forward, _right; // Keeps track of our relative forward and right vectors
+    private static readonly int Running = Animator.StringToHash("Running");
+
+    private void Awake()
+    {
+        anim = gameObject.GetComponentInChildren<Animator>();
+    }
+
     void Start()
     {
         _forward = Camera.main.transform.forward; // Set forward to equal the camera's forward vector
@@ -57,6 +67,7 @@ public class CharacterController : MonoBehaviour
 
     void Move()
     {
+        anim.SetBool(Running,true);
         Vector3 rightMovement, upMovement;
         if (Input.GetButton("Horizontal") && Input.GetButton("Vertical")) {
             rightMovement = moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey") * _right / xSlow;
