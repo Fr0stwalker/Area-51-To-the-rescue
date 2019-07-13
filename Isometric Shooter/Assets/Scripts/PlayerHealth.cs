@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int lives = 3;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private int currentLives;
+    [SerializeField] private AudioClip deathClip;
+
+    private Animator _animator;
+    private AudioSource _playerAudioSource;
+
+    //private bool _isDead;
+    private bool _damaged;
 }

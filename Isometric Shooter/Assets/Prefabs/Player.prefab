@@ -15,8 +15,6 @@ GameObject:
   - component: {fileID: 1638626613}
   - component: {fileID: 1638626615}
   - component: {fileID: 1638626614}
-  - component: {fileID: 1638626609}
-  - component: {fileID: 7860029323021005663}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -125,6 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f734c29a475014fa3436baf179bf2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 3
+  currentLives: 0
+  deathClip: {fileID: 0}
 --- !u!54 &1638626614
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -141,33 +142,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &1638626609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3838141387529546848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 350a44a15e47fb143b15c4269adc9f83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7860029323021005663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3838141387529546848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 944b4176a647be546a9f1baec9cf6494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 12
-  minBoundary: -38
-  maxBoundary: 38
 --- !u!1001 &3399265990000924330
 PrefabInstance:
   m_ObjectHideFlags: 0

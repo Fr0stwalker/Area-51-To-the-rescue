@@ -1,10 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
     private IEnumerator _coroutine;
+    private ParticleSystem _explosionParticleSystem;
+    private void Awake()
+    {
+        _explosionParticleSystem = GetComponent<ParticleSystem>();
+    }
+
     private void OnEnable()
     {
         Debug.Log("Boom");
@@ -22,6 +29,7 @@ public class Explode : MonoBehaviour
     private IEnumerator Explosion(float time)
     {
         Debug.Log("Explosion started");
+        _explosionParticleSystem.Play();
         yield return new WaitForSeconds(time);
         Debug.Log("Explosion ended");
         print("Coroutine ended: " + Time.time + " seconds");
