@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 6904756218774937058}
   - component: {fileID: 3322247026326385701}
   - component: {fileID: 863686848447373120}
-  - component: {fileID: -2838663753840234898}
   m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
@@ -140,19 +139,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionClip: {fileID: 0}
---- !u!208 &-2838663753840234898
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7604828155712974833}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
+  respawnTimer: 5
