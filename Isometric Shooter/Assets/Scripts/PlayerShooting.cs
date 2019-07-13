@@ -58,8 +58,8 @@ public class PlayerShooting : MonoBehaviour
         // Enable the light.
         _gunLight.enabled = true;
         // Stop the particles from playing if they were, then start the particles.
-        _gunParticleSystem.Play();
         //_gunParticleSystem.Stop();
+        _gunParticleSystem.Play();
         // Enable the line renderer and set it's first position to be the end of the gun.
         //_gunLineRenderer.enabled = true;
         _gunLineRenderer.SetPosition(0,transform.position);
