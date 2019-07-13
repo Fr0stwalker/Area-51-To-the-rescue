@@ -68,6 +68,12 @@ public class PlayerShooting : MonoBehaviour
         if (Physics.Raycast(_shootRay, out _shootHit, range, _shootableMask))
         {
             // Try and find an EnemyHealth script on the gameobject hit.
+            Barrel barrel = _shootHit.collider.GetComponent<Barrel>();
+            if (barrel != null)
+            {
+                barrel.Death();
+            }
+            
             //EnemyHealth enemyHealth = shootHit.collider.GetComponent<EnemyHealth>();
 
             // If the EnemyHealth component exist...
