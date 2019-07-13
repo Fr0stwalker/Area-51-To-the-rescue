@@ -6,10 +6,14 @@ using UnityEngine;
 public class Explode : MonoBehaviour
 {
     private IEnumerator _coroutine;
-    private ParticleSystem _explosionParticleSystem;
+    //private ParticleSystem _explosionParticleSystem;
+
+
+    [SerializeField] private ParticleSystem deathFX;
+
     private void Awake()
     {
-        _explosionParticleSystem = GetComponent<ParticleSystem>();
+        //_explosionParticleSystem = GetComponent<ParticleSystem>();
     }
 
     private void OnEnable()
@@ -28,8 +32,9 @@ public class Explode : MonoBehaviour
     }
     private IEnumerator Explosion(float time)
     {
+        deathFX.Play();
         Debug.Log("Explosion started");
-        _explosionParticleSystem.Play();
+        //_explosionParticleSystem.Play();
         yield return new WaitForSeconds(time);
         Debug.Log("Explosion ended");
         print("Coroutine ended: " + Time.time + " seconds");
