@@ -3963,6 +3963,11 @@ PrefabInstance:
       propertyPath: healthUi
       value: 
       objectReference: {fileID: 1599039759}
+    - target: {fileID: 2885061285042192628, guid: 1d86b0e250aa24d48b61db14bc9afea9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
 --- !u!1001 &7936818460166384265
