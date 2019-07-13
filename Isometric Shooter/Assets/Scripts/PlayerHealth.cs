@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] private GameObject healthUi;
     [SerializeField] public int lives = 3;
     [SerializeField] private float invincibleTime = 3f;
     [SerializeField] public int currentLives;
@@ -16,7 +17,8 @@ public class PlayerHealth : MonoBehaviour
     //private bool _isDead;
     private bool _damaged;
     private bool _invincible;
-    private float timer;
+    private float _timer;
+    private int _heartToRemove=0;
 
     private void Update()
     {
@@ -29,13 +31,13 @@ public class PlayerHealth : MonoBehaviour
 
         if (_invincible)
         {
-            timer += Time.deltaTime;
+            _timer += Time.deltaTime;
         }
 
-        if (timer >= invincibleTime)
+        if (_timer >= invincibleTime)
         {
             Debug.Log("Can hit me");
-            timer = 0f;
+            _timer = 0f;
             _invincible = false;
             _damaged = false;
         }
@@ -47,6 +49,9 @@ public class PlayerHealth : MonoBehaviour
         {
             _damaged = true;
             currentLives--;
+            healthUi.transform.GetChild(_heartToRemove).gameObject.SetActive(false);
+            _heartToRemove++;
+
         }
         if (currentLives <=0)
         {
