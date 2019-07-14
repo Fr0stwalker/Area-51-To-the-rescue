@@ -2201,12 +2201,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d749611b211254eaf8e8bb2ca41338, type: 3}
---- !u!1 &1599039759 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7936818460520374701, guid: 685bec4e9130fb944916e3ab36fb9e51,
-    type: 3}
-  m_PrefabInstance: {fileID: 7936818460166384265}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1625074210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3954,18 +3948,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
-      propertyPath: healthUi
-      value: 
-      objectReference: {fileID: 1599039759}
-    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
-      propertyPath: lives
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
-      propertyPath: currentLives
-      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}

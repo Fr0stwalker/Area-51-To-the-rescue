@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void GoToNextScene()
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex+1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GoToTheFirstScene()
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+
+    public void GoToTheSpecificScene(string sceneName)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
