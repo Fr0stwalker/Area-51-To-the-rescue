@@ -1508,7 +1508,7 @@ Transform:
   m_LocalScale: {x: 20.196182, y: 5.2824936, z: 3.6186}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1023903065
 PrefabInstance:
@@ -1988,7 +1988,7 @@ Transform:
   m_Children:
   - {fileID: 1879001227}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 30, y: 45, z: 0}
 --- !u!114 &1477944077
 MonoBehaviour:
@@ -4173,6 +4173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936818459849192458, guid: 685bec4e9130fb944916e3ab36fb9e51,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7936818459849192460, guid: 685bec4e9130fb944916e3ab36fb9e51,
         type: 3}
