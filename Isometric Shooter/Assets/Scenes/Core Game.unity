@@ -2727,12 +2727,12 @@ PrefabInstance:
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: firstSpawnTimerDelay
-      value: 60
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: spawnTimer
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d749611b211254eaf8e8bb2ca41338, type: 3}
@@ -4137,6 +4137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
+        type: 3}
+      propertyPath: spawnTimer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d749611b211254eaf8e8bb2ca41338, type: 3}
@@ -5737,7 +5742,7 @@ PrefabInstance:
     - target: {fileID: 3555482659549518565, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: m_Name
-      value: Spawner 4
+      value: Spawner 5
       objectReference: {fileID: 0}
     - target: {fileID: 2791987864510128534, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
@@ -5802,7 +5807,7 @@ PrefabInstance:
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: spawnTimer
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d749611b211254eaf8e8bb2ca41338, type: 3}
@@ -7599,7 +7604,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1788.584, z: 1e-45, w: 0}
+  m_BoundingSphereOverride: {x: 0.109375, y: 0.03125, z: -0.03515625, w: -1}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -14073,9 +14078,9 @@ Transform:
   - {fileID: 413834599}
   - {fileID: 526278568}
   - {fileID: 1371736835}
-  - {fileID: 834068022}
-  - {fileID: 11398108}
   - {fileID: 53674944}
+  - {fileID: 11398108}
+  - {fileID: 834068022}
   - {fileID: 363622326}
   - {fileID: 577812073}
   - {fileID: 953164918}
@@ -14086,8 +14091,8 @@ Transform:
   - {fileID: 703474678}
   - {fileID: 513004333}
   - {fileID: 966851656}
-  - {fileID: 336372878}
   - {fileID: 2120143522}
+  - {fileID: 336372878}
   - {fileID: 781821010}
   - {fileID: 1362524313}
   - {fileID: 179933768}
@@ -15208,7 +15213,7 @@ PrefabInstance:
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: firstSpawnTimerDelay
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
@@ -15699,7 +15704,7 @@ PrefabInstance:
     - target: {fileID: 3555482659549518565, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: m_Name
-      value: Spawner 5
+      value: Spawner 4
       objectReference: {fileID: 0}
     - target: {fileID: 2791987864510128534, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
@@ -15759,7 +15764,7 @@ PrefabInstance:
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: spawnTimer
-      value: 25
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
@@ -19129,7 +19134,7 @@ PrefabInstance:
     - target: {fileID: 2308807873687466142, guid: 79d749611b211254eaf8e8bb2ca41338,
         type: 3}
       propertyPath: spawnTimer
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d749611b211254eaf8e8bb2ca41338, type: 3}
@@ -22223,14 +22228,6 @@ PrefabInstance:
       propertyPath: healthUi
       value: 
       objectReference: {fileID: 1599039759}
-    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
-      propertyPath: lives
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
-      propertyPath: currentLives
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 1638626615, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
       propertyPath: deathClip
       value: 
