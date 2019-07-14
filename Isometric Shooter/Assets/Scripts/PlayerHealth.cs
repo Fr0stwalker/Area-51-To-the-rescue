@@ -9,7 +9,6 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public int lives = 3;
     [SerializeField] private float invincibleTime = 3f;
     [SerializeField] public int currentLives;
-    [SerializeField] private AudioClip deathClip;
 
     [SerializeField] private GameObject[] objectsToFlash;
 
