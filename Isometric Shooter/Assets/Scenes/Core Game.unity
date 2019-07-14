@@ -21571,24 +21571,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1218229790}
-    - target: {fileID: 4548314244044708718, guid: 685bec4e9130fb944916e3ab36fb9e51,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToTheFirstScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 2093393268566692893, guid: 685bec4e9130fb944916e3ab36fb9e51,
-        type: 3}
-      propertyPath: gameOverPanel
-      value: 
-      objectReference: {fileID: 7936818460166384266}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 685bec4e9130fb944916e3ab36fb9e51, type: 3}
---- !u!1 &7936818460166384266 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3759211341708979052, guid: 685bec4e9130fb944916e3ab36fb9e51,
-    type: 3}
-  m_PrefabInstance: {fileID: 7936818460166384265}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8650159428938618988
 PrefabInstance:
   m_ObjectHideFlags: 0

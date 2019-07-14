@@ -10,6 +10,8 @@ public class Explode : MonoBehaviour
 
 
     [SerializeField] private ParticleSystem deathFX;
+    [SerializeField] private GameObject deathEffect;
+    [SerializeField] private float corpseDespawn=3.0f;
 
     private void Awake()
     {
@@ -28,7 +30,13 @@ public class Explode : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         Debug.Log("Was in Explosion when it started");
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            var go =Instantiate(deathEffect, other.gameObject.transform.position, Quaternion.identity);
+            Destroy(go, corpseDespawn);
+        }
         Destroy(other.gameObject);
+        
     }
     private IEnumerator Explosion(float time)
     {

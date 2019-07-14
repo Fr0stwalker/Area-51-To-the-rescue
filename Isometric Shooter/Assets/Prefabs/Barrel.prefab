@@ -185,6 +185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 80427118369763049}
+  deathEffect: {fileID: 4720299476118003528, guid: e24c5d4698aec1e41ae9ed968cf9eef5,
+    type: 3}
 --- !u!1 &7461790835403995928
 GameObject:
   m_ObjectHideFlags: 0
