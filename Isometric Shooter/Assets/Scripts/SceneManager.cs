@@ -11,6 +11,7 @@ public class SceneManager : MonoBehaviour
 
     public void GoToTheFirstScene()
     {
+        Time.timeScale = 1;
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
