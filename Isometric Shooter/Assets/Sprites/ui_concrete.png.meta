@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: 5df6aa0af10b5604c8d00064ceb5cebb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1048039667132653394
+    second: ui_concrete_0
+  - first:
+      213: 8392557858948261221
+    second: ui_concrete_1
+  - first:
+      213: 3585313600259907955
+    second: ui_concrete_2
+  - first:
+      213: 7995371565580978146
+    second: ui_concrete_3
+  - first:
+      213: 572193555790925322
+    second: ui_concrete_4
+  - first:
+      213: -3286672340838493578
+    second: ui_concrete_5
+  - first:
+      213: 8277503280977392637
+    second: ui_concrete_6
+  - first:
+      213: 5101190267466950631
+    second: ui_concrete_7
+  - first:
+      213: 6851018725007234552
+    second: ui_concrete_8
+  - first:
+      213: -4180124936001114049
+    second: ui_concrete_9
+  - first:
+      213: -7516711198796207749
+    second: ui_concrete_10
+  - first:
+      213: 7630415509723400913
+    second: ui_concrete_11
+  - first:
+      213: 1943157634135652188
+    second: ui_concrete_12
+  - first:
+      213: -4374150879855810239
+    second: ui_concrete_13
+  - first:
+      213: -4545799443869112380
+    second: ui_concrete_14
+  - first:
+      213: 3840160255297447579
+    second: ui_concrete_15
+  - first:
+      213: -3868507477040845359
+    second: ui_concrete_16
+  - first:
+      213: -4755378810233195092
+    second: ui_concrete_17
+  - first:
+      213: 6078730034295331173
+    second: ui_concrete_18
+  - first:
+      213: -5073872827032716689
+    second: ui_concrete_19
+  - first:
+      213: 5121022236489899369
+    second: ui_concrete_20
+  - first:
+      213: 5517300244712287009
+    second: ui_concrete_21
+  - first:
+      213: 2308846721147244300
+    second: ui_concrete_22
+  - first:
+      213: -8573615679435031578
+    second: ui_concrete_23
+  - first:
+      213: 2088825300550861785
+    second: ui_concrete_24
+  - first:
+      213: 898849050784022131
+    second: ui_concrete_25
+  - first:
+      213: 7338493432438145676
+    second: ui_concrete_26
+  - first:
+      213: -4046959014872778191
+    second: ui_concrete_27
+  - first:
+      213: -1975285589014724548
+    second: ui_concrete_28
+  - first:
+      213: 5833083057096963158
+    second: ui_concrete_29
+  - first:
+      213: 3919573451862907042
+    second: ui_concrete_30
+  - first:
+      213: -6942816027610236833
+    second: ui_concrete_31
+  - first:
+      213: 679972420505062227
+    second: ui_concrete_32
+  - first:
+      213: 8048412982109620610
+    second: ui_concrete_33
+  - first:
+      213: 3180981465082496643
+    second: ui_concrete_34
+  - first:
+      213: -8170703734561572590
+    second: ui_concrete_35
+  - first:
+      213: -4156425741914009556
+    second: ui_concrete_36
+  - first:
+      213: 323160538108770684
+    second: ui_concrete_37
+  - first:
+      213: -1136265177530671131
+    second: ui_concrete_38
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ui_concrete_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9e7409961b0714e9452fb526b25741
+      internalID: -1048039667132653394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be3629f2bcb5e148a084e7425e3826a
+      internalID: 8392557858948261221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cec7b00ea59de469865717e1bcd383
+      internalID: 3585313600259907955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bf4429c9aa0b344bcf2add5e0bcc00
+      internalID: 7995371565580978146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af39611ac421eeb4a91f0d346bc0e896
+      internalID: 572193555790925322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b00bc0e714095c46b5eb86dbf2d631a
+      internalID: -3286672340838493578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf4566f10283de479e4b56a9a442196
+      internalID: 8277503280977392637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da82b6bb901de724286432cd15a15d54
+      internalID: 5101190267466950631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fabe96ac917734497a69d93d59a2dc
+      internalID: 6851018725007234552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_9
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 92
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51687a430f1baa240b064aeb959a58a5
+      internalID: -4180124936001114049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5ee850f9da0d4469b5ba6a86b72c79
+      internalID: -7516711198796207749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7c4c6eb3384134ba1e287182b3c4d1
+      internalID: 7630415509723400913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_12
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5b4eeaeaae24f43a362c84f87cff21
+      internalID: 1943157634135652188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_13
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 92
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc9a2d1c2190a549b213d53591992c6
+      internalID: -4374150879855810239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 80
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36280e61181b9824c86a3cb038647e25
+      internalID: -4545799443869112380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_15
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 68
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92331839af25f0141a54514d65b87fab
+      internalID: 3840160255297447579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ad6dd556827854599a54e63bb37c42
+      internalID: -3868507477040845359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cb510a070ce7a4cb3f96305fd0cbf0
+      internalID: -4755378810233195092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddd658385fb6c740992f341beaca035
+      internalID: 6078730034295331173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5f4e38ed6beeb46b01b77456f637b8
+      internalID: -5073872827032716689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1fe97ace4cf5d439d3d985eb9d35a7
+      internalID: 5121022236489899369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_21
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c530cf7ff86a59e45b620e521db3eae6
+      internalID: 5517300244712287009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_22
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dace869f2905b8488b82d2d5e7d5c2b
+      internalID: 2308846721147244300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3adf688c6281044d80a7f69868ae298
+      internalID: -8573615679435031578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_24
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293be6b38502b074fb929bef17d0a0f4
+      internalID: 2088825300550861785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed3d6784951e934e80ca9e22d83738f
+      internalID: 898849050784022131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_26
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 68
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b9549715432fd4aa5b641ec95d0464
+      internalID: 7338493432438145676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_27
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 68
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e587b8be04c6f72499cdd549141c0595
+      internalID: -4046959014872778191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1580bdea291e8b649bec968ab4ce8ee6
+      internalID: -1975285589014724548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b268dfdd6faff4e87f2b1cce6cfd14
+      internalID: 5833083057096963158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_30
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57852f4714100f44c9fee9578bcd9bb1
+      internalID: 3919573451862907042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675327c1b869c9e488fe326456c709be
+      internalID: -6942816027610236833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8455ab8d4e3c1704697a6718877e0d4b
+      internalID: 679972420505062227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d07bfabea5502468f907820c6f05ab
+      internalID: 8048412982109620610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_34
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f649cfc8498c94ebab7201df61257f
+      internalID: 3180981465082496643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ee9ecdf18a07e4eb954a5760c8d65e
+      internalID: -8170703734561572590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_36
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 44
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79a92a4b6d22d44882f5f2781c81355
+      internalID: -4156425741914009556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 20
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecf2b60c5a6f5b418f6e7c9508ec4a0
+      internalID: 323160538108770684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_concrete_38
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 20
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b8000f088a053438244e06c1bb8750
+      internalID: -1136265177530671131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7f68fec33111d6e42a70bd40b02e0bdb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
