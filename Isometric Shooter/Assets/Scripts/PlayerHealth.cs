@@ -22,8 +22,9 @@ public class PlayerHealth : MonoBehaviour
     private int _heartToRemove=0;
 
 
-    void Start() {
-
+    private void Awake()
+    {
+        _playerAudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -75,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!_invincible)
         {
+            _playerAudioSource.Play();
             _damaged = true;
             currentLives--;
             healthUi.transform.GetChild(_heartToRemove).gameObject.SetActive(false);
