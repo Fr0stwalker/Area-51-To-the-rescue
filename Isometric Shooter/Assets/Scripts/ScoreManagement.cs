@@ -6,15 +6,21 @@ using UnityEngine.UI;
 
 public class ScoreManagement : MonoBehaviour
 {
-    [SerializeField] private Text scoreText;
+    private Text _scoreText;
     private int _currentScore;
+
+    private void Awake()
+    {
+        _scoreText = FindObjectOfType<Canvas>().gameObject.transform.GetChild(1).gameObject.transform.GetChild(1).GetComponent<Text>();
+    }
+
     public int CurrentScore
     {
         get => _currentScore;
         set
         {
             _currentScore = value;
-            scoreText.text = value.ToString();
+            _scoreText.text = value.ToString();
         }
     }
 }
