@@ -1099,8 +1099,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48.8, y: 0}
-  m_SizeDelta: {x: 72.3, y: 45}
+  m_AnchoredPosition: {x: 62.743, y: -0.0000038146973}
+  m_SizeDelta: {x: 100.19, y: 81.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7936818459555081141
 CanvasRenderer:
@@ -1132,12 +1132,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38ed23ea467645f4f92d2f4a89d932a2, type: 3}
-    m_FontSize: 14
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1401,7 +1401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -85, y: -67.5}
+  m_AnchoredPosition: {x: -85, y: -22.5}
   m_SizeDelta: {x: 170, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7936818461107559924
@@ -1552,10 +1552,10 @@ RectTransform:
   m_Father: {fileID: 7936818461107559688}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -85, y: -22.5}
-  m_SizeDelta: {x: 170, y: 45}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 112.83, y: -40.69}
+  m_SizeDelta: {x: 225.67, y: 81.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7936818461423502835
 GameObject:
@@ -1591,8 +1591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.50001, y: 0}
-  m_SizeDelta: {x: 85, y: 45}
+  m_AnchoredPosition: {x: -50.091, y: -0.0000038147}
+  m_SizeDelta: {x: 125.48, y: 81.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7936818461423502836
 CanvasRenderer:
@@ -1624,12 +1624,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38ed23ea467645f4f92d2f4a89d932a2, type: 3}
-    m_FontSize: 14
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 5
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
