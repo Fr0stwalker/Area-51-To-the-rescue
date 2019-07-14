@@ -2272,7 +2272,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1e-45, y: 0, z: 0, w: 6.6547297e+13}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -6818,12 +6818,12 @@ PrefabInstance:
     - target: {fileID: 3399265990354729894, guid: 1d86b0e250aa24d48b61db14bc9afea9,
         type: 3}
       propertyPath: simulationSpeed
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3399265990354729894, guid: 1d86b0e250aa24d48b61db14bc9afea9,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d86b0e250aa24d48b61db14bc9afea9, type: 3}
