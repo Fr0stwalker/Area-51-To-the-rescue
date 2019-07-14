@@ -1358,6 +1358,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 456830220, guid: 751e1903dff5f7941a8dd0d09399ac01, type: 3}
+      propertyPath: simulationSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 456830220, guid: 751e1903dff5f7941a8dd0d09399ac01, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5579001482299862056, guid: 751e1903dff5f7941a8dd0d09399ac01,
         type: 3}
       propertyPath: m_IsActive
