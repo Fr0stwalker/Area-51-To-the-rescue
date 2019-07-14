@@ -19,7 +19,6 @@ public class PlayerShooting : MonoBehaviour
     private Light _gunLight;
     private Animator _anim;
     private float _effectsDisplayTime=0.2f;
-    private static readonly int Shooting = Animator.StringToHash("Shooting");
 
     void Awake()
     {
@@ -47,7 +46,6 @@ public class PlayerShooting : MonoBehaviour
 
     private void DisableEffects()
     {
-        _anim.SetBool(Shooting, false);
         _gunLineRenderer.enabled = false;
         _gunLight.enabled = false;
         _gunParticleSystem.Stop();
@@ -55,7 +53,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot()
     {
-        _anim.SetBool(Shooting,true);
+        _anim.Play("Shooting",0,0);
         // Reset the timer.
         _timer = 0f;
         // Play the gun shot audioclip.
