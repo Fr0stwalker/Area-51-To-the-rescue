@@ -57,7 +57,6 @@ public class EnemyAttack : MonoBehaviour
     
     */
 
-    // TODO: Attack player, currently enemy dissapear in 1 radius
     private void AttackPlayer()
     {
         _timer = 0f;
