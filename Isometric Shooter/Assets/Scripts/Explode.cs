@@ -12,6 +12,7 @@ public class Explode : MonoBehaviour
     [SerializeField] private ParticleSystem deathFX;
     [SerializeField] private GameObject deathEffect;
     [SerializeField] private float corpseDespawn=3.0f;
+    [SerializeField] private GameObject Audio;
 
     private void Awake()
     {
@@ -35,6 +36,8 @@ public class Explode : MonoBehaviour
             var go =Instantiate(deathEffect, other.gameObject.transform.position, Quaternion.identity);
             Destroy(go, corpseDespawn);
         }
+
+        Audio.gameObject.transform.GetChild(2).GetComponent<PlaySound>().DeathSound();
         Destroy(other.gameObject);
         
     }

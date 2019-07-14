@@ -187,6 +187,8 @@ MonoBehaviour:
   deathFX: {fileID: 80427118369763049}
   deathEffect: {fileID: 4720299476118003528, guid: e24c5d4698aec1e41ae9ed968cf9eef5,
     type: 3}
+  corpseDespawn: 3
+  Audio: {fileID: 5659605695460837607, guid: 412ba574d6d048341b6c8613c8a1b0a9, type: 3}
 --- !u!1 &7461790835403995928
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,9 +341,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: c0c8473f6b883aa4c9d7d9b176bc9bf1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
