@@ -12,16 +12,15 @@ public class Explode : MonoBehaviour
     [SerializeField] private ParticleSystem deathFX;
     [SerializeField] private GameObject deathEffect;
     [SerializeField] private float corpseDespawn=3.0f;
-    [SerializeField] private GameObject Audio;
+    [SerializeField] private GameObject audio;
 
-    private void Awake()
-    {
-        //_explosionParticleSystem = GetComponent<ParticleSystem>();
-    }
+    private bool playOnce=true;
+
 
     private void OnEnable()
     {
         Debug.Log("Boom");
+        playOnce = true;
         print("Starting " + Time.time + " seconds");
         _coroutine = Explosion(0.5f);
         StartCoroutine(_coroutine);
@@ -31,13 +30,17 @@ public class Explode : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         Debug.Log("Was in Explosion when it started");
+        if (playOnce && other.gameObject.CompareTag("Enemy"))
+        {
+            playOnce = false;
+            audio.GetComponent<AudioSource>().Play();
+        }
         if (other.gameObject.CompareTag("Enemy"))
         {
             var go =Instantiate(deathEffect, other.gameObject.transform.position, Quaternion.identity);
             Destroy(go, corpseDespawn);
         }
 
-        Audio.gameObject.transform.GetChild(2).GetComponent<PlaySound>().DeathSound();
         Destroy(other.gameObject);
         
     }

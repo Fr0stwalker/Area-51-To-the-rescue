@@ -674,7 +674,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 38ed23ea467645f4f92d2f4a89d932a2, type: 3}
-    m_FontSize: 70
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -685,10 +685,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-    Text
+  m_Text: "Creators/programmers: Ikuti and Frost\r\n3d models of cacti and barrel:
+    Nobody\r\n3d models of main character and aliens: CodeerStudio\r\nOther 3d models:
+    23SpaceRobots\r\nParticles: Polygonal.Stuff\r\nSound effects: dersuperanton/schots/spookymodem/befig\r\nMusic:
+    Miami by Radiant delta\r\nButton art: Buch\r\nFonts: Cdeck81 and dustBUST"
 --- !u!222 &611746525
 CanvasRenderer:
   m_ObjectHideFlags: 0
