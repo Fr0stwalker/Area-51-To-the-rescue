@@ -83,7 +83,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if (currentLives <=0)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 
     }
