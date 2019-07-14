@@ -15,6 +15,7 @@ public class CharacterController : MonoBehaviour
     private Animator anim;
     private Vector3 _forward, _right; // Keeps track of our relative forward and right vectors
     private static readonly int Running = Animator.StringToHash("Running");
+    private static readonly int NotMoving = Animator.StringToHash("NotMoving");
 
     private void Awake()
     {
@@ -37,6 +38,11 @@ public class CharacterController : MonoBehaviour
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical")) // only execute if a key is being pressed
         {
             Move();
+        }
+        else
+        {
+            anim.SetBool(NotMoving,true);
+            anim.SetBool(Running, false);
         }
     }
 
@@ -67,6 +73,7 @@ public class CharacterController : MonoBehaviour
 
     void Move()
     {
+        anim.SetBool(NotMoving, false);
         anim.SetBool(Running,true);
         Vector3 rightMovement, upMovement;
         if (Input.GetButton("Horizontal") && Input.GetButton("Vertical")) {

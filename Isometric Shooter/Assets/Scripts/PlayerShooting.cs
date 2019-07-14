@@ -17,7 +17,9 @@ public class PlayerShooting : MonoBehaviour
     private LineRenderer _gunLineRenderer;
     private AudioSource _gunAudioSource;
     private Light _gunLight;
+    private Animator _anim;
     private float _effectsDisplayTime=0.2f;
+    private static readonly int Shooting = Animator.StringToHash("Shooting");
 
     void Awake()
     {
@@ -27,6 +29,7 @@ public class PlayerShooting : MonoBehaviour
         _gunLineRenderer = GetComponent<LineRenderer>();
         _gunAudioSource = GetComponent<AudioSource>();
         _gunLight = GetComponent<Light>();
+        _anim = transform.parent.gameObject.GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -44,6 +47,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void DisableEffects()
     {
+        _anim.SetBool(Shooting, false);
         _gunLineRenderer.enabled = false;
         _gunLight.enabled = false;
         _gunParticleSystem.Stop();
@@ -51,6 +55,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void Shoot()
     {
+        _anim.SetBool(Shooting,true);
         // Reset the timer.
         _timer = 0f;
         // Play the gun shot audioclip.
