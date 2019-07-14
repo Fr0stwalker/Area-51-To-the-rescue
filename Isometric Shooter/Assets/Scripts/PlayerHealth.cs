@@ -91,6 +91,11 @@ public class PlayerHealth : MonoBehaviour
 
     void OnDestroy()
     {
+        healthUi.transform.GetChild(0).gameObject.SetActive(false);
+        healthUi.transform.GetChild(1).gameObject.SetActive(false);
+        healthUi.transform.GetChild(2).gameObject.SetActive(false);
+        FindObjectOfType<GameOver>().GameOverPanel();
+        Time.timeScale = 0;
         Debug.Log("I died");
     }
 }
