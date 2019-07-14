@@ -9,6 +9,12 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float firstSpawnTimerDelay = 5f;
     [SerializeField] private GameObject enemy;
     private float timer;
+    private ParticleSystem _particleSystem;
+
+    private void Awake()
+    {
+        _particleSystem = GetComponent<ParticleSystem>();
+    }
 
     private void Start()
     {
@@ -27,6 +33,7 @@ public class Spawner : MonoBehaviour
     void Spawn()
     {
         timer = 0f;
+        _particleSystem.Play();
         Instantiate(enemy,gameObject.transform.position,Quaternion.identity);
     }
 }

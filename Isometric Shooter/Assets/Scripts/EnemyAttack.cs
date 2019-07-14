@@ -11,7 +11,6 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private float timeBetweenAttacks = 0.5f;
     private float _timer;
     private Animator _anim;
-    private static readonly int Attack = Animator.StringToHash("Attack");
 
     private void Awake()
     {
@@ -62,9 +61,8 @@ public class EnemyAttack : MonoBehaviour
     private void AttackPlayer()
     {
         _timer = 0f;
-        _anim.SetBool(Attack, true);
+        _anim.Play("Attacking",0,0);
         GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage();
-        _anim.SetBool(Attack, false);
     }
 
 }
