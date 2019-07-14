@@ -44,7 +44,6 @@ public class Barrel : MonoBehaviour
         _isDead = true;
         _capsuleCollider.enabled = false;
         _barrelObstacle.enabled = false;
-        _barrelAudioSource.clip = explosionClip;
         _barrelAudioSource.Play();
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
