@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public int currentLives;
     [SerializeField] private AudioClip deathClip;
 
+    [SerializeField] private GameObject[] objectsToFlash;
+
     private Animator _animator;
     private AudioSource _playerAudioSource;
 
@@ -20,10 +22,9 @@ public class PlayerHealth : MonoBehaviour
     private float _timer;
     private int _heartToRemove=0;
 
-    private MeshRenderer meshRenderer;
 
     void Start() {
-        meshRenderer = GetComponent<MeshRenderer>();
+
     }
 
     private void Update()
@@ -31,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
         if (_damaged) {
             Debug.Log("Ouch");
             _invincible = true;
+            TriggerInvincibleFlashing();
             Debug.Log("Can't hit me");
         }
 
@@ -45,10 +47,30 @@ public class PlayerHealth : MonoBehaviour
             _timer = 0f;
             _invincible = false;
             _damaged = false;
+            TriggerInvincibleFlashing();
         }
     }
 
-    
+    private void TriggerInvincibleFlashing() {
+        foreach (GameObject playerElements in objectsToFlash) {
+            var meshTrigger = playerElements.GetComponent<Renderer>();
+            if (_invincible == true) {
+                CharacterFlash(meshTrigger);
+            }
+            else if (_invincible == false) {
+                meshTrigger.enabled = true;
+            }
+        }
+    }
+
+    private static void CharacterFlash(Renderer meshTrigger) {
+        if (Time.time % 0.5 < 0.2) {
+            meshTrigger.enabled = false;
+        }
+        else {
+            meshTrigger.enabled = true;
+        }
+    }
 
     public void TakeDamage()
     {
