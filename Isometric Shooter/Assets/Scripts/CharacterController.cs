@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 7f; //Change in inspector to adjust move speed
@@ -15,6 +17,7 @@ public class CharacterController : MonoBehaviour
     private Vector3 _forward, _right; // Keeps track of our relative forward and right vectors
     private static readonly int Running = Animator.StringToHash("Running");
     private static readonly int NotMoving = Animator.StringToHash("NotMoving");
+    private Vector3 mousePos;
 
     private void Awake()
     {
@@ -33,6 +36,7 @@ public class CharacterController : MonoBehaviour
     }
     void Update()
     {
+        
         Turning();
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical")) // only execute if a key is being pressed
         {
@@ -49,16 +53,19 @@ public class CharacterController : MonoBehaviour
     {
         // Create a ray from the mouse cursor on screen in the direction of the camera.
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
+        camRay.origin = new Vector3(camRay.origin.x+30,camRay.origin.y,camRay.origin.z+30);
+        FindObjectOfType<ShowMouseCoords>().camRay = camRay.ToString();
         // Create a RaycastHit variable to store information about what was hit by the ray.
         RaycastHit floorHit;
 
         // Perform the raycast and if it hits something on the floor layer...
         if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
         {
+            FindObjectOfType<ShowMouseCoords>().floorHit = floorHit.ToString();
+            FindObjectOfType<ShowMouseCoords>().position = transform.position.ToString();
             // Create a vector from the player to the point on the floor the raycast from the mouse hit.
             Vector3 playerToMouse = floorHit.point - transform.position;
-
+            FindObjectOfType<ShowMouseCoords>().playerToMouse = playerToMouse.ToString();
             // Ensure the vector is entirely along the floor plane.
             playerToMouse.y = 0f;
 
@@ -66,6 +73,7 @@ public class CharacterController : MonoBehaviour
             Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
 
             // Set the player's rotation to this new rotation.
+            
             playerRigidbody.MoveRotation(newRotation);
         }
     }
