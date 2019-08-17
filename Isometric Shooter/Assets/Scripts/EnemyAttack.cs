@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-
-    Vector3 _playerPosition;
     float distanceFromEnemyToPlayer;
     [SerializeField] private float timeBetweenAttacks = 0.5f;
     private float _timer;
@@ -20,7 +18,6 @@ public class EnemyAttack : MonoBehaviour
     void Update()
     {
         _timer += Time.deltaTime;
-        FindPlayerCharacter();
         DistanceToPlayer();
         if (_timer >= timeBetweenAttacks && distanceFromEnemyToPlayer <= 1)
         {
@@ -28,16 +25,6 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-
-    private void FindPlayerCharacter() {
-        GameObject isPlayerAlive = GameObject.Find("Player");
-        if (isPlayerAlive) {
-            _playerPosition = isPlayerAlive.transform.position;
-        }
-        else {
-            return;
-        }
-    }
     private void DistanceToPlayer() {
         if (GameObject.Find("Player") != null)
         {
@@ -54,7 +41,6 @@ public class EnemyAttack : MonoBehaviour
         float moveToPlayerSpeed = MovementSpeed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, playerPosition, moveToPlayerSpeed);
     } 
-    
     */
 
     private void AttackPlayer()
@@ -63,5 +49,4 @@ public class EnemyAttack : MonoBehaviour
         _anim.Play("Attacking",0,0);
         GameObject.Find("Player").GetComponent<PlayerHealth>().TakeDamage();
     }
-
 }

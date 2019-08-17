@@ -30,10 +30,8 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         if (_damaged) {
-            Debug.Log("Ouch");
             _invincible = true;
             TriggerInvincibleFlashing();
-            Debug.Log("Can't hit me");
         }
 
         if (_invincible)

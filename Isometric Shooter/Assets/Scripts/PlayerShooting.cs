@@ -96,7 +96,6 @@ public class PlayerShooting : MonoBehaviour
         {
             // ... set the second position of the line renderer to the fullest extent of the gun's range.
             _gunLineRenderer.SetPosition(1, _shootRay.origin + _shootRay.direction * range);
-            Debug.Log("Shot Nothing");
         }
         
     }
